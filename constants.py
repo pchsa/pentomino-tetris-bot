@@ -4,6 +4,10 @@ from enum import Enum
 BOARD_WIDTH = 10
 BOARD_HEIGHT = 20
 
+INITIAL_BOARD_STATE = [[0] * BOARD_WIDTH for _ in range(BOARD_HEIGHT)]
+INITIAL_X_POSITION = 4
+INITIAL_Y_POSITION = BOARD_HEIGHT - 5
+
 class Pentomino(Enum):
     I5 = 1
     V5 = 2
